@@ -47,13 +47,13 @@ Figure 1: Initial random distribution assignment
 Step2 - Based on bayes theorem it finds probability of distribution given data point P(A | xi).
 At initial stage while using bayes theorem, prior probability P(A) can be assumed some constant value.
 
-Step3- Once posterior probability P(A | xi) is found, P(A) can be recalculated using law of total probability.
+Step3 - Once posterior probability P(A | xi) is found, P(A) can be recalculated using law of total probability.
 
 P(A) = P(A | x1)+P(A | x2)+⋯+P(A|xi)
 
 P(B) = 1-P(A)
 
-Step4- Now, mean (µ1)  and variance (σ1<sup>2</sup>) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
+Step4 - Now, mean (µ1)  and variance (σ1<sup>2</sup>) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
 
 ![figure1_1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_1.JPG?raw=true)
 
