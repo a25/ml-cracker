@@ -16,13 +16,12 @@ X = set of data points having (x1,x2……..xi)
 µ2, σ2<sup>2</sup>= parameter for gaussian model(B)
 
 We can calculate,
-![figure1_2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2.JPG?raw=true)
+![figure1_2_2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2_2.JPG?raw=true)
 
 Now, Using Native Bayes algorithm we can calculate:
 
-P(A | xi) = (P(xi | A)* P(A))/(P(xi│A)*P(A)  + P(xi│B)*P(B)) = (P(xi | A)* P(A))/(P(xi))
+![figure1_2_3](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2_3.JPG?raw=true)
 
-P(B | xi) = (P(xi | B)* P(B))/(P(xi│A)*P(A)  + P(xi│B)*P(B))=(P(xi | B)* P(B))/(P(xi))
 Where,
 P(A), P(B) = prior probability of distributions
 P(xi) = probability of data point
@@ -42,9 +41,9 @@ At initial stage while using bayes theorem, prior probability P(A) can be assume
 
 Step3- Once posterior probability P(A | xi) is found, P(A) can be recalculated using law of total probability.
 
-P(A)=P(A | x1)+P(A | x2)+⋯+P(A|xi)
+P(A) = P(A | x1)+P(A | x2)+⋯+P(A|xi)
 
-P(B)=1-P(A)
+P(B) = 1-P(A)
 
 Step4- Now, mean (µ1)  and variance (σ1<sup>2</sup>) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
 
