@@ -1,11 +1,5 @@
 ## Expectation Maximization algorithm
 
-You can use the [editor on GitHub](https://github.com/a25/ml-explained.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
 In clustering problem, we can have hard clustering or soft clustering. Hard clustering assigns each point to distinct cluster. Soft clustering can have same point assigned to more than one cluster.
 Gaussian mixture model is one of the soft clustering algorithms. It identifies dataset points distribution in terms of different gaussian models.
 Now, question comes, given data points, how one can find from which distribution those data points came?
@@ -35,7 +29,26 @@ Now let’s see in detail steps used in EM algorithm:
 Step1 – Algorithm assigns initial random µ and σ to given number of gaussians. Based on this it finds probability of particular data point given some distribution P(xi | A) .
 
 ![figure1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1.JPG?raw=true)
+Figure 1: Initial random distribution assignment
 
+* Data point shades shown in image reflects probability of assignment to particular distribution.
+Step2 - Based on bayes theorem it finds probability of distribution given data point P(A | xi). At initial stage while using bayes theorem, prior probability P(A) can be assumed some constant value.
+Step3- Once posterior probability P(A | xi) is found, P(A) can be recalculated using law of total probability.
+P(A)=P(A | x1)+P(A | x2)+⋯+P(A|xi)
+P(B)=1-P(A)
+Step4- Now, mean (µ1)  and variance (〖σ1〗^2) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
+
+µ1 = (x1*P(A ┤|  x1) + x2*P(A | x2) + … +xi*P(A ┤|xi))/(P(A ┤|  x1)+P(A ┤|  x2)+⋯+P(A ┤|  xi))  ,  µ2 = (x1*P(B ┤|  x1) + x2*P(B | x2) + … +xi*P(B ┤|  xi))/(P(B ┤|  x1)+P(B ┤|  x2)+⋯+P(B ┤|  xi))
+〖σ1〗^2=(〖(x1-µ1)〗^2+〖(x2-µ1)〗^2  + … +〖(xi-µ1)〗^2)/(P(A ┤|  x1)+P(A ┤|  x2)+⋯+P(A ┤|  xi))  , 〖σ2〗^2=(〖(x1-µ2)〗^2+〖(x2-µ2)〗^2  + … +〖(xi-µ2)〗^2)/(P(B ┤|  x1)+P(B ┤|  x2)+⋯+P(B ┤|  xi))
+
+![figure2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_2.JPG?raw=true)
+Figure 2: points assignment recalculated and distribution adjusted
+
+This step1 to step4 steps repeats in cycle until proper distribution is found.
+You may be wondering why mean is not average of points, why there is probability term multiplied in numerator and added in denominator? It’s because some points may be partially assigned to particular cluster as shown in Figure-3.
+
+![figure3](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_3.JPG?raw=true)
+Figure-3: single datapoint partially assigned in different clusters.
 
 ```markdown
 Syntax highlighted code block
@@ -57,9 +70,9 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### References
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/a25/ml-explained.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+(1) https://www.youtube.com/watch?v=iQoXFmbXRJA
 
 ### Support or Contact
 
