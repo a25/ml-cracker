@@ -2,18 +2,18 @@
 
 In clustering problem, we can have hard clustering or soft clustering. Hard clustering assigns each point to distinct cluster. Soft clustering can have same point assigned to more than one cluster.
 Gaussian mixture model is one of the soft clustering algorithms. It identifies dataset points distribution in terms of different gaussian models.
+
 Now, question comes, given data points, how one can find from which distribution those data points came?
 I will explain this using 1-D gaussians.
+
 We know that 1-D gaussian model has 2 parameters (µ - mean) and (σ^2 - variance). If these points are known then we can find data points distribution.
 But how one can find µ and σ^2   , if there is no information of which points belongs to particular gaussian model?
 Suppose we have dataset which can be represented by two gaussian models and objective is to find models parameter.
 Given,
 
 X = set of data points having (x1,x2……..xi)
-
-µ1, 〖σ1〗^2= parameter for gaussian model (A)
-
-µ2, 〖σ2〗^2= parameter for gaussian model(B)
+µ1, σ1<sup>2</sup>= parameter for gaussian model (A)
+µ2, σ2<sup>2</sup>= parameter for gaussian model(B)
 
 We can calculate,
 ![figure1_2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2.JPG?raw=true)
@@ -46,7 +46,7 @@ P(A)=P(A | x1)+P(A | x2)+⋯+P(A|xi)
 
 P(B)=1-P(A)
 
-Step4- Now, mean (µ1)  and variance (〖σ1〗^2) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
+Step4- Now, mean (µ1)  and variance (σ1<sup>2</sup>) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
 
 ![figure1_1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_1.JPG?raw=true)
 
