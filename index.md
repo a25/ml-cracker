@@ -10,14 +10,18 @@ Suppose we have dataset which can be represented by two gaussian models and obje
 Given,
 
 X = set of data points having (x1,x2……..xi)
+
 µ1, 〖σ1〗^2= parameter for gaussian model (A)
+
 µ2, 〖σ2〗^2= parameter for gaussian model(B)
+
 We can calculate,
-P(xi | A )= probability of data point from given gaussian distribution (A) =(1*ⅇ^((-(xi-u1)^2)/(2〖σ1〗^2 )))/√(2π〖σ1〗^2 )
-P(xi | B)= probability of data point from given gaussian distribution (B) =(1*ⅇ^((-(xi-u2)^2)/(2〖σ2〗^2 )))/√(2π〖σ2〗^2 )
+![figure1_2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2.JPG?raw=true)
 
 Now, Using Native Bayes algorithm we can calculate:
+
 P(A | xi) = (P(xi | A)* P(A))/(P(xi│A)*P(A)  + P(xi│B)*P(B)) = (P(xi | A)* P(A))/(P(xi))
+
 P(B | xi) = (P(xi | B)* P(B))/(P(xi│A)*P(A)  + P(xi│B)*P(B))=(P(xi | B)* P(B))/(P(xi))
 Where,
 P(A), P(B) = prior probability of distributions
@@ -33,13 +37,18 @@ Step1 – Algorithm assigns initial random µ and σ to given number of gaussian
 Figure 1: Initial random distribution assignment
 
 * Data point shades shown in image reflects probability of assignment to particular distribution.
-Step2 - Based on bayes theorem it finds probability of distribution given data point P(A | xi). At initial stage while using bayes theorem, prior probability P(A) can be assumed some constant value.
+Step2 - Based on bayes theorem it finds probability of distribution given data point P(A | xi).
+At initial stage while using bayes theorem, prior probability P(A) can be assumed some constant value.
+
 Step3- Once posterior probability P(A | xi) is found, P(A) can be recalculated using law of total probability.
+
 P(A)=P(A | x1)+P(A | x2)+⋯+P(A|xi)
+
 P(B)=1-P(A)
+
 Step4- Now, mean (µ1)  and variance (〖σ1〗^2) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
 
-!(https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_1.JPG?raw=true)
+![figure1_1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_1.JPG?raw=true)
 
 
 ![figure2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_2.JPG?raw=true)
