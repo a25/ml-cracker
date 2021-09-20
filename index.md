@@ -10,8 +10,8 @@ Suppose we have dataset which can be represented by two gaussian models and obje
 Given,
 
 X = set of data points having (x1,x2……..xi)
-µ1, 〖σ1〗^2= parameter for gaussian model (A)
-µ2, 〖σ2〗^2= parameter for gaussian model(B)
+µ1, σ1<sup>2</sup>= parameter for gaussian model (A)
+µ2, σ2<sup>2</sup>= parameter for gaussian model(B)
 We can calculate,
 P(xi | A )= probability of data point from given gaussian distribution (A) =(1*ⅇ^((-(xi-u1)^2)/(2〖σ1〗^2 )))/√(2π〖σ1〗^2 )
 P(xi | B)= probability of data point from given gaussian distribution (B) =(1*ⅇ^((-(xi-u2)^2)/(2〖σ2〗^2 )))/√(2π〖σ2〗^2 )
