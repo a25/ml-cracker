@@ -35,7 +35,7 @@ P(A &#8739; xi), P(B &#8739; xi) = posterior probability of distributions given 
 
 Now let’s see in detail steps used in EM algorithm:
 
-Step1 – Algorithm assigns initial random µ and σ to given number of gaussians. 
+Step1 – Algorithm assigns initial random µ and σ to given number of gaussians.
 Based on this it finds probability of particular data point given some distribution P(xi | A) .
 
 ![figure1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1.JPG?raw=true)
@@ -65,7 +65,7 @@ Figure 2: points assignment recalculated and distribution adjusted
 This step1 to step4 steps repeats in cycle until proper distribution is found.
 You may be wondering why mean is not average of points, why there is probability term multiplied in numerator and added in denominator? It’s because some points may be partially assigned to particular cluster as shown in Figure-3.
 
-![figure3](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_3.JPG?raw=true)
+![figure3_1_1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_3_1_1.JPG?raw=true)
 
 Figure-3: single datapoint partially assigned in different clusters.
 
