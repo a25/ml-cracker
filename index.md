@@ -28,16 +28,19 @@ Where,
 P(A), P(B) = prior probability of distributions
 P(xi) = probability of data point
 
-P(A | xi), P(B | xi) = posterior probability of distributions given datapoints
+P(A|xi), P(B|xi) = posterior probability of distributions given datapoints
 
 Now let’s see in detail steps used in EM algorithm:
-Step1 – Algorithm assigns initial random µ and σ to given number of gaussians. Based on this it finds probability of particular data point given some distribution P(xi | A) .
+
+Step1 – Algorithm assigns initial random µ and σ to given number of gaussians. 
+Based on this it finds probability of particular data point given some distribution P(xi | A) .
 
 ![figure1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1.JPG?raw=true)
 
 Figure 1: Initial random distribution assignment
 
 * Data point shades shown in image reflects probability of assignment to particular distribution.
+
 Step2 - Based on bayes theorem it finds probability of distribution given data point P(A | xi).
 At initial stage while using bayes theorem, prior probability P(A) can be assumed some constant value.
 
