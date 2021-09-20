@@ -20,7 +20,7 @@ We can calculate,
 
 Now, Using Native Bayes algorithm we can calculate:
 
-![figure1_2_3](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2_3.JPG?raw=true)
+![figure1_2_3_4](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2_3_4.JPG?raw=true)
 
 Where,
 P(A), P(B) = prior probability of distributions
@@ -60,26 +60,6 @@ You may be wondering why mean is not average of points, why there is probability
 ![figure3](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_3.JPG?raw=true)
 
 Figure-3: single datapoint partially assigned in different clusters.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### References
 
