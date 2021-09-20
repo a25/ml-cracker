@@ -73,6 +73,6 @@ Figure-3: single datapoint partially assigned in different clusters.
 
 (1) https://www.youtube.com/watch?v=iQoXFmbXRJA
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Contact me
+This is my first blog, if you have any query or suggestions let me know.
+Check out my linkdin profile [profile](https://www.linkedin.com/in/ashish-j-a65296141).
