@@ -40,7 +40,7 @@ Based on this it finds probability of particular data point given some distribut
 
 ![figure1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1.JPG?raw=true)
 
-Figure 1: Initial random distribution assignment
+Figure-1: Initial random distribution assignment
 
 * Data point shades shown in image reflects probability of assignment to particular distribution.
 
@@ -53,14 +53,14 @@ P(A) = P(A &#8739; x1)+P(A &#8739; x2)+⋯+P(A &#8739; xi)
 
 P(B) = 1-P(A)
 
-Step4 - Now, mean (µ1)  and variance (σ1<sup>2</sup>) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
+Step4 - Now, mean (µ1)  and variance (σ1<sup>2</sup>) can also be recalculated as below and Gaussian distributions can be moved as shown in Figure-2:
 
 ![figure1_1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_1.JPG?raw=true)
 
 
 ![figure2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_2.JPG?raw=true)
 
-Figure 2: points assignment recalculated and distribution adjusted
+Figure-2: points assignment recalculated and distribution adjusted
 
 This step1 to step4 steps repeats in cycle until proper distribution is found.
 You may be wondering why mean is not average of points, why there is probability term multiplied in numerator and added in denominator? It’s because some points may be partially assigned to particular cluster as shown in Figure-3.
