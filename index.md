@@ -29,6 +29,7 @@ Now let’s see in detail steps used in EM algorithm:
 Step1 – Algorithm assigns initial random µ and σ to given number of gaussians. Based on this it finds probability of particular data point given some distribution P(xi | A) .
 
 ![figure1](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1.JPG?raw=true)
+
 Figure 1: Initial random distribution assignment
 
 * Data point shades shown in image reflects probability of assignment to particular distribution.
@@ -38,16 +39,18 @@ P(A)=P(A | x1)+P(A | x2)+⋯+P(A|xi)
 P(B)=1-P(A)
 Step4- Now, mean (µ1)  and variance (〖σ1〗^2) can also be recalculated as below and Gaussian distributions can be moved as shown in figure 2:
 
-µ1 = (x1*P(A ┤|  x1) + x2*P(A | x2) + … +xi*P(A ┤|xi))/(P(A ┤|  x1)+P(A ┤|  x2)+⋯+P(A ┤|  xi))  ,  µ2 = (x1*P(B ┤|  x1) + x2*P(B | x2) + … +xi*P(B ┤|  xi))/(P(B ┤|  x1)+P(B ┤|  x2)+⋯+P(B ┤|  xi))
-〖σ1〗^2=(〖(x1-µ1)〗^2+〖(x2-µ1)〗^2  + … +〖(xi-µ1)〗^2)/(P(A ┤|  x1)+P(A ┤|  x2)+⋯+P(A ┤|  xi))  , 〖σ2〗^2=(〖(x1-µ2)〗^2+〖(x2-µ2)〗^2  + … +〖(xi-µ2)〗^2)/(P(B ┤|  x1)+P(B ┤|  x2)+⋯+P(B ┤|  xi))
+!(https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_1.JPG?raw=true)
+
 
 ![figure2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_2.JPG?raw=true)
+
 Figure 2: points assignment recalculated and distribution adjusted
 
 This step1 to step4 steps repeats in cycle until proper distribution is found.
 You may be wondering why mean is not average of points, why there is probability term multiplied in numerator and added in denominator? It’s because some points may be partially assigned to particular cluster as shown in Figure-3.
 
 ![figure3](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_3.JPG?raw=true)
+
 Figure-3: single datapoint partially assigned in different clusters.
 
 ```markdown
