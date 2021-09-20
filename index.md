@@ -47,7 +47,7 @@ Figure 1: Initial random distribution assignment
 Step2 - Based on bayes theorem it finds probability of distribution given data point P(A | xi).
 At initial stage while using bayes theorem, prior probability P(A) can be assumed some constant value.
 
-Step3 - Once posterior probability P(A | xi) is found, P(A) can be recalculated using law of total probability.
+Step3 - Once posterior probability P(A &#8739; xi) is found, P(A) can be recalculated using law of total probability.
 
 P(A) = P(A &#8739; x1)+P(A &#8739; x2)+⋯+P(A &#8739; xi)
 
