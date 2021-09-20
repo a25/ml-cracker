@@ -12,7 +12,9 @@ Suppose we have dataset which can be represented by two gaussian models and obje
 Given,
 
 X = set of data points having (x1,x2……..xi)
+
 µ1, σ1<sup>2</sup>= parameter for gaussian model (A)
+
 µ2, σ2<sup>2</sup>= parameter for gaussian model(B)
 
 We can calculate,
