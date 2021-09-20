@@ -25,7 +25,9 @@ Now, Using Native Bayes algorithm we can calculate:
 ![figure1_2_3_4](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2_3_4.JPG?raw=true)
 
 Where,
+
 P(A), P(B) = prior probability of distributions
+
 P(xi) = probability of data point
 
 P(A|xi), P(B|xi) = posterior probability of distributions given datapoints
