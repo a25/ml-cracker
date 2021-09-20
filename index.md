@@ -31,7 +31,7 @@ P(A), P(B) = prior probability of distributions
 
 P(xi) = probability of data point
 
-P(A|xi), P(B|xi) = posterior probability of distributions given datapoints
+P(A | xi), P(B | xi) = posterior probability of distributions given datapoints
 
 Now let’s see in detail steps used in EM algorithm:
 
