@@ -18,6 +18,7 @@ X = set of data points having (x1,x2……..xi)
 µ2, σ2<sup>2</sup>= parameter for gaussian model(B)
 
 We can calculate,
+
 ![figure1_2_2](https://github.com/a25/ml-explained.github.io/blob/gh-pages/images/figure_1_2_2.JPG?raw=true)
 
 Now, Using Native Bayes algorithm we can calculate:
