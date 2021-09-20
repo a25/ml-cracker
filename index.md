@@ -31,7 +31,7 @@ P(A), P(B) = prior probability of distributions
 
 P(xi) = probability of data point
 
-P(A | xi), P(B | xi) = posterior probability of distributions given datapoints
+P(A &#8739; xi), P(B &#8739; xi) = posterior probability of distributions given datapoints
 
 Now let’s see in detail steps used in EM algorithm:
 
@@ -49,7 +49,7 @@ At initial stage while using bayes theorem, prior probability P(A) can be assume
 
 Step3 - Once posterior probability P(A | xi) is found, P(A) can be recalculated using law of total probability.
 
-P(A) = P(A | x1)+P(A | x2)+⋯+P(A|xi)
+P(A) = P(A &#8739; x1)+P(A &#8739; x2)+⋯+P(A &#8739; xi)
 
 P(B) = 1-P(A)
 
