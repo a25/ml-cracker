@@ -70,10 +70,11 @@ You may be wondering why mean is not average of points, why there is probability
 Figure-3: single datapoint partially assigned in different clusters.
 
 ### References
+(1) https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm
+(2) https://www.youtube.com/watch?v=iQoXFmbXRJA
 
-(1) https://www.youtube.com/watch?v=iQoXFmbXRJA
 
 ### Contact me
 My name is Ashish Jha. I am deep learning enthusiast.
-This is my first blog, if you have any query or suggestions let me know.
+if you have any query or suggestions let me know.
 Check out my linkdin [profile](https://www.linkedin.com/in/ashish-j-a65296141).
